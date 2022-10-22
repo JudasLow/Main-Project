@@ -4,18 +4,13 @@
 // Loop through Array of Objects
 var objPeople = [
 	{ // Object @ 0 index
-		username: "sam",
-		password: "codify"
+		username: "STAFF",
+		password: "STAFF"
 	},
 	{ // Object @ 1 index
-		username: "matt",
-		password: "academy"
+		username: "STUDENT",
+		password: "STUDENT"
 	},
-	{ // Object @ 2 index
-		username: "chris",
-		password: "forever"
-	}
-
 ]
 
 function getInfo() {
