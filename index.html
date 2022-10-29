@@ -1,15 +1,14 @@
 <!DOCTYPE html>   
 <html>   
 <head>  
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="mystyle.css" >
+    <script src="login.js"></script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">  
 <title> Room Booking System </title>  
-<img src="/SIM-logo.png" alt="NIL" width="200" height="200">
-
-
-</style>   
+<img src="SIM-logo.png" alt="NIL" width="200" height="200">
 </head>    
-<body>    
+<body>   
     <center> <h1> SIM Room Booking System </h1> </center>   
     <form>  
         <div class="container">   
@@ -17,12 +16,11 @@
             <input type="text" id ="username" placeholder="Enter you Username" name="username" required>  
             <label>Password : </label>   
             <input type="password" id = "password" placeholder="Enter you Password" name="password" required>  
-            <button type="submit">Login</button>   
-            <input type="checkbox" checked="checked" onclick="getInfo()"> Remember me   
-            <button type="button" class="cancelbtn"> Cancel</button>   
-            Forgot <a href="#"> password? </a>   
-        </div>   
+          
+            <button type ="button" onclick="getInfo()">Login</button>   
+            <input type="checkbox" checked="unchecked" > Remember me
+        </div> 
     </form>     
-    <script src="main.js"></script>
+
 </body>     
 </html>  

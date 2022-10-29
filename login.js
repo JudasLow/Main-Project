@@ -17,16 +17,26 @@ function getInfo() {
 	var username = document.getElementById('username').value
 	var password = document.getElementById('password').value
 
-	console.log("getInfo is called")
+	console.log("getInfo is called before for loop")
 
 	for(var i = 0; i < objPeople.length; i++) {
 		// check is user input matches username and password of a current index of the objPeople array
-		if(username == objPeople[i].username && password == objPeople[i].password) {
-			console.log(username + " is logged in!!!")
-            location.replace("TEST")
-			// stop the function if this is found to be true
+		if(username == objPeople[0].username && password == objPeople[0].password) 
+		{	
+			console.log(username+ " is logged in!!!")
+			window.location = "staff.html";
 			return
 		}
+		else if (username == objPeople[1].username && password == objPeople[1].password)
+		{
+			console.log(username + " is logged in!!!")
+			window.location = "student.html"
+			return
+		}
+
+		else
+		{
+			console.log("incorrect username or password")
+		}
 	}
-	console.log("incorrect username or password")
 }
