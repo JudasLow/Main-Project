@@ -1,80 +1,68 @@
-
-
 <!DOCTYPE html>
 
+<!--Ref to the css-->
 <link rel="stylesheet" href="staffstyle.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <html lang="en">
+
 <head>
   <title>Staff</title>
 </head>
+
 <body>
- 
+  <!--Logout Button-->
+  <button type="logout" onclick="logout()">Logout</button>
 
-
+  <!--Create Meeting Room Sections-->
   <div id="Meeting Rooms">
     <div class="container">
-        <div class="section-header">
-          <h3>Create Rooms:</h3>
-
-          <label>ID:<label>
-            <select id="selectNumber">
+      <div class="section-header">
+        <h3>Create Rooms:</h3>
+        <label>ID:<label>
+            <select id="rid">
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
-              </select>
+            </select>
             <br>
+            <br>
+            <label>Room Name:<label>
+                <input id="roomname" type="text">
+                <br>
+                <label>Room Capacity:<label>
+                    <input id="capacity" type="text">
+                    <br>
+                    <label>Room Price:<label>
+                        <input id="price" type="text">
+                        <br>
+                        <!--on button click , store data in JavaScript object-->
+                        <button id="jsonbtn">Create Room</button>
+                        <p id="jsontext"></p>
+                        <script src="room.js"></script>
+                        <!--Display Meeting Room Sections-->
+      </div>
+      <script type="text/javascript">
+      </script>
+      <div class="container2">
+        <div class="section-header">
+          <h3>Available Rooms:</h3>
+          <button id="Display Item">Display Rooms</button>
+          <p id="show"></p>
 
-
-              <label>Room Name:<label>
-              <input id="roomname" type="text">
-              <br>
-              <label>Room Capacity:<label>
-              <input id="capacity" type="text">
-              <br>
-              <button id="jsonbtn" >Create Room</button>
-              <p id="jsontext"></p>
-              <script src="room.js"></script>
-
-           
-            </div>
-
-
-            
-
-            <div class="container2">
-              <div class="section-header">
-                <h3>Available Rooms:</h3>
-           
-            <button id="Display Item" >Display Rooms</button>
-            <p id="show"></p>
-           
-
-
-
-            <table id="displayroom">
-              <tr><td>id</td><td>Room</td><td>Capacity</td></tr>
+          <!--Trying to make table-->
+          <table id="displayroom">
+            <tr>
+              <td>id</td>
+              <td>Room</td>
+              <td>Capacity</td>
+            </tr>
           </table>
-
-    
-          
-
 </body>
 
-
 <body>
-
-
-
-
-
 </body>>
-
-
-  
-
 
 </html>
