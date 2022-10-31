@@ -41,7 +41,6 @@
                         <!--on button click , store data in JavaScript object-->
                         <button id="jsonbtn">Create Room</button>
                         <p id="jsontext"></p>
-                        <script src="room.js"></script>
                         <!--Display Meeting Room Sections-->
       </div>
       <script type="text/javascript">
@@ -49,20 +48,26 @@
       <div class="container2">
         <div class="section-header">
           <h3>Available Rooms:</h3>
-          <button id="Display Item">Display Rooms</button>
+          <button id="displayRooms1">Display Rooms</button>
           <p id="show"></p>
-
+          
           <!--Trying to make table-->
           <table id="displayroom">
-            <tr>
-              <td>id</td>
-              <td>Room</td>
-              <td>Capacity</td>
-            </tr>
+            <thead>
+              <tr>
+                <td>id</td>
+                <td>Room</td>
+                <td>Capacity</td>
+                <td>Price</td>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
           </table>
-</body>
+          <script src="room.js"></script>
+        </body>
 
 <body>
-</body>>
+</body>
 
 </html>
